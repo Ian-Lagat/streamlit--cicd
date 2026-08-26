@@ -1,0 +1,6 @@
+streamlit 
+pytest 
+
+#Why should dependencies be listed in requirements.txt rather than relying on packages already installed on the developer's computer?
+
+#requirements.txt file ensures that your project is reproducible, portable, and isolated from your personal computer's global setup
