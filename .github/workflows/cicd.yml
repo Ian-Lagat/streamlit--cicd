@@ -2,22 +2,14 @@ name: Streamlit CI/CD
 
 on:
   push:
-    branches:
-      -main
-
-
+    branches: [ "main" ]
   pull_request:
-    branches:
-      - main
+    branches: [ "main" ]
 
 jobs:
-
   test:
-
     runs-on: ubuntu-latest
-
     steps:
-
       - name: Checkout source code
         uses: actions/checkout@v4
 
@@ -26,7 +18,7 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install dependancies
+      - name: Install dependencies
         run: |
           pip install -r requirements.txt
 
